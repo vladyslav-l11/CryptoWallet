@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2714DF722B714B8F0013CAA5 /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714DF712B714B8F0013CAA5 /* CryptoWalletApp.swift */; };
 		2714DF742B714B8F0013CAA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714DF732B714B8F0013CAA5 /* ContentView.swift */; };
 		2714DF762B714B910013CAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2714DF752B714B910013CAA5 /* Assets.xcassets */; };
 		2714DF792B714B910013CAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2714DF782B714B910013CAA5 /* Preview Assets.xcassets */; };
+		2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714DF832B7173D80013CAA5 /* AppDelegate.swift */; };
+		2714DF872B71788D0013CAA5 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 2714DF862B71788D0013CAA5 /* RswiftLibrary */; };
+		2714DF892B71788D0013CAA5 /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 2714DF882B71788D0013CAA5 /* rswift */; };
+		273F0E342B72BCF1003FEFF1 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 273F0E332B72BCF1003FEFF1 /* Web3 */; };
+		273F0E362B72BCF1003FEFF1 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 273F0E352B72BCF1003FEFF1 /* Web3ContractABI */; };
+		273F0E382B72BCF1003FEFF1 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 273F0E372B72BCF1003FEFF1 /* Web3PromiseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2714DF6E2B714B8F0013CAA5 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2714DF712B714B8F0013CAA5 /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		2714DF732B714B8F0013CAA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2714DF752B714B910013CAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2714DF782B714B910013CAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2714DF832B7173D80013CAA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273F0E342B72BCF1003FEFF1 /* Web3 in Frameworks */,
+				2714DF872B71788D0013CAA5 /* RswiftLibrary in Frameworks */,
+				273F0E362B72BCF1003FEFF1 /* Web3ContractABI in Frameworks */,
+				273F0E382B72BCF1003FEFF1 /* Web3PromiseKit in Frameworks */,
+				2714DF892B71788D0013CAA5 /* rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +61,12 @@
 		2714DF702B714B8F0013CAA5 /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
-				2714DF712B714B8F0013CAA5 /* CryptoWalletApp.swift */,
-				2714DF732B714B8F0013CAA5 /* ContentView.swift */,
-				2714DF752B714B910013CAA5 /* Assets.xcassets */,
 				2714DF772B714B910013CAA5 /* Preview Content */,
+				2714DF822B7173C10013CAA5 /* Resources */,
+				2714DF812B7173B90013CAA5 /* Views */,
+				2714DF802B7173AE0013CAA5 /* Models */,
+				2714DF7F2B71726F0013CAA5 /* Components */,
+				2714DF832B7173D80013CAA5 /* AppDelegate.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -65,6 +77,36 @@
 				2714DF782B714B910013CAA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2714DF7F2B71726F0013CAA5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2714DF802B7173AE0013CAA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2714DF812B7173B90013CAA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2714DF732B714B8F0013CAA5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2714DF822B7173C10013CAA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2714DF752B714B910013CAA5 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,8 +123,16 @@
 			buildRules = (
 			);
 			dependencies = (
+				2714DF8B2B7178CD0013CAA5 /* PBXTargetDependency */,
 			);
 			name = CryptoWallet;
+			packageProductDependencies = (
+				2714DF862B71788D0013CAA5 /* RswiftLibrary */,
+				2714DF882B71788D0013CAA5 /* rswift */,
+				273F0E332B72BCF1003FEFF1 /* Web3 */,
+				273F0E352B72BCF1003FEFF1 /* Web3ContractABI */,
+				273F0E372B72BCF1003FEFF1 /* Web3PromiseKit */,
+			);
 			productName = CryptoWallet;
 			productReference = 2714DF6E2B714B8F0013CAA5 /* CryptoWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,10 @@
 				Base,
 			);
 			mainGroup = 2714DF652B714B8F0013CAA5;
+			packageReferences = (
+				2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */,
+				273F0E322B72BCF1003FEFF1 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+			);
 			productRefGroup = 2714DF6F2B714B8F0013CAA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,12 +191,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */,
 				2714DF742B714B8F0013CAA5 /* ContentView.swift in Sources */,
-				2714DF722B714B8F0013CAA5 /* CryptoWalletApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2714DF8B2B7178CD0013CAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2714DF8A2B7178CD0013CAA5 /* RswiftGenerateInternalResources */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2714DF7A2B714B910013CAA5 /* Debug */ = {
@@ -197,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -344,6 +405,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.0;
+			};
+		};
+		273F0E322B72BCF1003FEFF1 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2714DF862B71788D0013CAA5 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = RswiftLibrary;
+		};
+		2714DF882B71788D0013CAA5 /* rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = rswift;
+		};
+		2714DF8A2B7178CD0013CAA5 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = "plugin:RswiftGenerateInternalResources";
+		};
+		273F0E332B72BCF1003FEFF1 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273F0E322B72BCF1003FEFF1 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+		273F0E352B72BCF1003FEFF1 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273F0E322B72BCF1003FEFF1 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3ContractABI;
+		};
+		273F0E372B72BCF1003FEFF1 /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273F0E322B72BCF1003FEFF1 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2714DF662B714B8F0013CAA5 /* Project object */;
 }
