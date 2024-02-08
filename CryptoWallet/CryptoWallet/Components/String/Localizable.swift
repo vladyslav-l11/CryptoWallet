@@ -9,4 +9,5 @@ import SwiftUI
 
 enum Localizable {
     static let homeTitle: LocalizedStringKey = "home.title"
+    static let signIn: LocalizedStringKey = "home.sign.in"
 }
