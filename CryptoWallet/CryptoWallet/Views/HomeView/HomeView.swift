@@ -14,13 +14,19 @@ struct HomeView: View {
         static let cornerRadius: CGFloat = 8
     }
     
-    private var title: Text {
+    private var titleText: Text {
         Text(Localizable.homeTitle)
             .font(.title)
     }
     
-    private var signIn: some View {
+    private var signInButton: some View {
         button(withKey: Localizable.signIn) {
+            // TODO
+        }
+    }
+    
+    private var signUpButton: some View {
+        button(withKey: Localizable.signUp) {
             // TODO
         }
     }
@@ -46,8 +52,9 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            title
-            signIn
+            titleText
+            signInButton
+            signUpButton
         }
     }
 }
