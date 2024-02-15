@@ -1,6 +1,20 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld." : {
+
+    },
+    "enter.word.placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter word"
+          }
+        }
+      }
+    },
     "home.sign.in" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -30,6 +44,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crypto Wallet"
+          }
+        }
+      }
+    },
+    "sign.up.save.seed.phrase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save your seed phrase"
           }
         }
       }
