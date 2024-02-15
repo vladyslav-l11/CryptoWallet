@@ -17,4 +17,8 @@ final class SeedViewModel: ObservableObject {
     func confirmSeedPhrase() {
         // TODO
     }
+    
+    func signIn() {
+        // TODO
+    }
 }

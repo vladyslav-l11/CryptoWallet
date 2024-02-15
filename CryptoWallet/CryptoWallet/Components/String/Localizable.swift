@@ -18,5 +18,7 @@ enum Localizable {
     static let saveSeedPhraseButton: LocalizedStringKey = "sign.up.save.seed.phrase.button"
     static let confirmSeedPhrase: LocalizedStringKey = "sign.up.confirm.seed.phrase"
     static let confirmSeedPhraseButton: LocalizedStringKey = "sign.up.confirm.seed.phrase.button"
+    static let enterSeedPhrase: LocalizedStringKey = "sign.in.enter.seed.phrase"
+    static let enterSeedPhraseButton: LocalizedStringKey = "sign.in.enter.seed.phrase.button"
     static let enterWordPlaceholder: LocalizedStringKey = "enter.word.placeholder"
 }

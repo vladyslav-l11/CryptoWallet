@@ -48,6 +48,28 @@
         }
       }
     },
+    "sign.in.enter.seed.phrase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your seed phrase"
+          }
+        }
+      }
+    },
+    "sign.in.enter.seed.phrase.button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign In"
+          }
+        }
+      }
+    },
     "sign.up.confirm.seed.phrase" : {
       "extractionState" : "manual",
       "localizations" : {

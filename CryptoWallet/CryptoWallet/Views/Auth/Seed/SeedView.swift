@@ -13,6 +13,7 @@ struct SeedView: View, ViewModelContainer {
     enum Flow {
         case showSeedPhrase
         case confirmSeedPhrase
+        case enterWithSeedPhrase
         
         var title: LocalizedStringKey {
             switch self {
@@ -20,6 +21,8 @@ struct SeedView: View, ViewModelContainer {
                 return Localizable.saveSeedPhrase
             case .confirmSeedPhrase:
                 return Localizable.confirmSeedPhrase
+            case .enterWithSeedPhrase:
+                return Localizable.enterSeedPhrase
             }
         }
         
@@ -33,6 +36,8 @@ struct SeedView: View, ViewModelContainer {
                 return Localizable.saveSeedPhraseButton
             case .confirmSeedPhrase:
                 return Localizable.confirmSeedPhraseButton
+            case .enterWithSeedPhrase:
+                return Localizable.enterSeedPhraseButton
             }
         }
     }
@@ -44,9 +49,10 @@ struct SeedView: View, ViewModelContainer {
             GridItem(.flexible())
         ]
     
-    private var titleText: Text {
+    private var titleText: some View {
         Text(flow.title)
             .font(.title)
+            .multilineTextAlignment(.center)
     }
     
     private var seedWordsGrid: some View {
@@ -66,6 +72,8 @@ struct SeedView: View, ViewModelContainer {
                 flow = .confirmSeedPhrase
             case .confirmSeedPhrase:
                 viewModel.confirmSeedPhrase()
+            case .enterWithSeedPhrase:
+                viewModel.signIn()
             }
         }, label: {
             Text(flow.buttonTitle)
