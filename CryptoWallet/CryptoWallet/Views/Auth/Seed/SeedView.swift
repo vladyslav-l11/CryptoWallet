@@ -12,16 +12,28 @@ struct SeedView: View, ViewModelContainer {
     
     enum Flow {
         case showSeedPhrase
+        case confirmSeedPhrase
         
         var title: LocalizedStringKey {
             switch self {
             case .showSeedPhrase:
                 return Localizable.saveSeedPhrase
+            case .confirmSeedPhrase:
+                return Localizable.confirmSeedPhrase
             }
         }
         
         var isReadOnly: Bool {
             self == .showSeedPhrase
+        }
+        
+        var buttonTitle: LocalizedStringKey {
+            switch self {
+            case .showSeedPhrase:
+                return Localizable.saveSeedPhraseButton
+            case .confirmSeedPhrase:
+                return Localizable.confirmSeedPhraseButton
+            }
         }
     }
     
@@ -47,6 +59,25 @@ struct SeedView: View, ViewModelContainer {
         }
     }
     
+    private var performButton: some View {
+        Button(action: {
+            switch flow {
+            case .showSeedPhrase:
+                flow = .confirmSeedPhrase
+            case .confirmSeedPhrase:
+                viewModel.confirmSeedPhrase()
+            }
+        }, label: {
+            Text(flow.buttonTitle)
+                .foregroundStyle(.white)
+                .padding(.horizontal)
+        })
+        .frame(height: 48)
+        .background(.black)
+        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .padding(.top, 32)
+    }
+    
     init(viewModel: SeedViewModel, flow: Flow = .showSeedPhrase) {
         self.viewModel = viewModel
         self.flow = flow
@@ -58,6 +89,7 @@ struct SeedView: View, ViewModelContainer {
                 ScrollView {
                     titleText
                     seedWordsGrid
+                    performButton
                 }
                 .padding(.horizontal)
             }

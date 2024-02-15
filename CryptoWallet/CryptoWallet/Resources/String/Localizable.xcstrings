@@ -48,13 +48,46 @@
         }
       }
     },
+    "sign.up.confirm.seed.phrase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm your seed phrase"
+          }
+        }
+      }
+    },
+    "sign.up.confirm.seed.phrase.button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        }
+      }
+    },
     "sign.up.save.seed.phrase" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Save your seed phrase"
+            "value" : "Write your seed phrase somewhere"
+          }
+        }
+      }
+    },
+    "sign.up.save.seed.phrase.button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I've written"
           }
         }
       }

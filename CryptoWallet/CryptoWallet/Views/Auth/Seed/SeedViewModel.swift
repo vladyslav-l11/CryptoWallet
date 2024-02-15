@@ -13,4 +13,8 @@ final class SeedViewModel: ObservableObject {
     init() {
         (1...12).forEach { words.append(SeedWord(number: $0)) }
     }
+    
+    func confirmSeedPhrase() {
+        // TODO
+    }
 }
