@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias RouteBaseType = RawRepresentable & Hashable & CaseIterable & Destinationable
+
 protocol Routeable {
-    associatedtype Route: RawRepresentable & Hashable & CaseIterable & Destinationable where Route.RawValue == Int
+    associatedtype Route: RouteBaseType where Route.RawValue == Int
 }
