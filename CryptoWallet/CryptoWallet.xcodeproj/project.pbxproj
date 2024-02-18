@@ -23,6 +23,11 @@
 		279DA4452B72CF420061D6E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA4442B72CF420061D6E1 /* HomeView.swift */; };
 		279DA44F2B72D78B0061D6E1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 279DA44E2B72D78A0061D6E1 /* Localizable.xcstrings */; };
 		27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFFC992B7BF30300D8A486 /* SeedWordView.swift */; };
+		27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A1E2B81540D009D681B /* BaseRouter.swift */; };
+		27E51A232B815579009D681B /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A222B815579009D681B /* RouterView.swift */; };
+		27E51A272B8156E6009D681B /* Routeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A262B8156E6009D681B /* Routeable.swift */; };
+		27E51A2C2B816433009D681B /* RouteNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A2B2B816433009D681B /* RouteNavigationLink.swift */; };
+		27E51A322B8263A2009D681B /* Destinationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A312B8263A2009D681B /* Destinationable.swift */; };
 		27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F82CC22B7563D700B3AEE9 /* SeedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,11 @@
 		279DA4442B72CF420061D6E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		279DA44E2B72D78A0061D6E1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		27CFFC992B7BF30300D8A486 /* SeedWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedWordView.swift; sourceTree = "<group>"; };
+		27E51A1E2B81540D009D681B /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		27E51A222B815579009D681B /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		27E51A262B8156E6009D681B /* Routeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routeable.swift; sourceTree = "<group>"; };
+		27E51A2B2B816433009D681B /* RouteNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteNavigationLink.swift; sourceTree = "<group>"; };
+		27E51A312B8263A2009D681B /* Destinationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinationable.swift; sourceTree = "<group>"; };
 		27F82CC22B7563D700B3AEE9 /* SeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +125,7 @@
 		2714DF812B7173B90013CAA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27E51A1B2B8153FF009D681B /* Base */,
 				27F82CBC2B75633A00B3AEE9 /* Auth */,
 				279DA4432B72CF360061D6E1 /* Home */,
 				2714DF732B714B8F0013CAA5 /* AppView.swift */,
@@ -135,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				27723C522B7D5E85004AA6BD /* ViewModelContainer.swift */,
+				27E51A262B8156E6009D681B /* Routeable.swift */,
+				27E51A312B8263A2009D681B /* Destinationable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -177,6 +190,16 @@
 				27CFFC992B7BF30300D8A486 /* SeedWordView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		27E51A1B2B8153FF009D681B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				27E51A1E2B81540D009D681B /* BaseRouter.swift */,
+				27E51A222B815579009D681B /* RouterView.swift */,
+				27E51A2B2B816433009D681B /* RouteNavigationLink.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		27F82CBC2B75633A00B3AEE9 /* Auth */ = {
@@ -280,13 +303,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E51A2C2B816433009D681B /* RouteNavigationLink.swift in Sources */,
 				278F4CCD2B7D56FA00E94543 /* SeedWord.swift in Sources */,
 				279DA4452B72CF420061D6E1 /* HomeView.swift in Sources */,
 				27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */,
 				27723C4D2B7D5D57004AA6BD /* SeedViewModel.swift in Sources */,
 				2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */,
+				27E51A272B8156E6009D681B /* Routeable.swift in Sources */,
 				2782007C2B72DBCA003E1CA6 /* Localizable.swift in Sources */,
+				27E51A232B815579009D681B /* RouterView.swift in Sources */,
 				27723C532B7D5E85004AA6BD /* ViewModelContainer.swift in Sources */,
+				27E51A322B8263A2009D681B /* Destinationable.swift in Sources */,
+				27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */,
 				2714DF742B714B8F0013CAA5 /* AppView.swift in Sources */,
 				27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */,
 			);
