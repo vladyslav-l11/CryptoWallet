@@ -8,5 +8,5 @@
 import Foundation
 
 final class Factory {
-    // TODO
+    static let home = HomeFactory.main
 }
