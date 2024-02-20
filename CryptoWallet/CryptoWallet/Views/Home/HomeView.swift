@@ -22,6 +22,7 @@ struct HomeView: View, ViewModelContainer {
     private var titleText: Text {
         Text(Localizable.homeTitle)
             .font(.title)
+            .foregroundColor(.black)
     }
     
     private var signInButton: some View {
