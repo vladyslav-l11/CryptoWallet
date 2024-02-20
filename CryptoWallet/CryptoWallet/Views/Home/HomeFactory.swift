@@ -11,6 +11,10 @@ final class HomeFactory {
     static let main = HomeFactory()
     private init() {}
     
+    func makeHome() -> HomeView {
+        HomeView(viewModel: HomeViewModel())
+    }
+    
     func makeSeed(flow: SeedView.Flow) -> SeedView {
         SeedView(viewModel: SeedViewModel(), flow: flow)
     }
