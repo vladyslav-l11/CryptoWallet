@@ -7,15 +7,9 @@
 
 import SwiftUI
 
-class BaseRouter<T: Routeable> {
+class BaseRouter<T: Routeable>: ObservableObject {
     @Environment(\.presentationMode) private var presentationMode
-    @State private var route: T.Route?
-    
-    var links: some View {
-        ForEach(Array(T.Route.allCases), id: \.self) { route in
-            RouteNavigationLink<T, T.Route.Destination>(selection: self.$route, destination: route.desination, tag: route)
-        }
-    }
+    @Published var route: T.Route?
     
     func navigateTo(_ route: T.Route) {
         self.route = route

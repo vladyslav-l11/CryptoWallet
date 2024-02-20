@@ -26,7 +26,7 @@ struct HomeView: View, ViewModelContainer {
     
     private var signInButton: some View {
         button(withKey: Localizable.signIn) {
-            // TODO
+            viewModel.didOpenSignIn()
         }
     }
     
@@ -61,10 +61,12 @@ struct HomeView: View, ViewModelContainer {
     }
     
     var body: some View {
-        VStack {
-            titleText
-            signInButton
-            signUpButton
+        RouterView(router: viewModel.router) {
+            VStack {
+                titleText
+                signInButton
+                signUpButton
+            }
         }
     }
 }

@@ -8,5 +8,9 @@
 import SwiftUI
 
 final class HomeViewModel: RouterContainer, ObservableObject {
-    let router: HomeRouter = HomeRouter()
+    var router: HomeRouter = HomeRouter()
+    
+    func didOpenSignIn() {
+        router.navigateTo(.signIn)
+    }
 }
