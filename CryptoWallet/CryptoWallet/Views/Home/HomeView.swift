@@ -68,7 +68,7 @@ struct HomeView: View, ViewModelContainer {
                 signInButton
                 signUpButton
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .fullScreened()
             .background(.white)
         }
     }

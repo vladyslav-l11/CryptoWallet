@@ -102,9 +102,8 @@ struct SeedView: View, ViewModelContainer {
                 }
                 .padding(.horizontal)
             }
-            .frame(maxWidth: .infinity,
-                   maxHeight: .infinity,
-                   alignment: .top)
+            .fullScreened()
+            .frame(alignment: .top)
             .background(.white)
         }
     }
