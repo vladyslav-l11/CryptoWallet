@@ -10,7 +10,7 @@ import SwiftUI
 struct RouterView<R: Routeable, Content: View>: View {
     typealias Router = BaseRouter<R>
     
-    @ObservedObject private var router: Router
+    private var router: Router
     private let content: Content
     
     init(router: Router, @ViewBuilder content: @escaping () -> Content) {
