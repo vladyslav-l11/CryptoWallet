@@ -17,7 +17,9 @@ struct SeedWordView: View {
             HStack {
                 Text("\(rowNumber).")
                     .foregroundColor(.black)
-                TextField(Localizable.enterWordPlaceholder, text: $word)
+                TextField(text: $word)
+                    .placeholder(Localizable.enterWordPlaceholder,
+                                 shouldShow: word.isEmpty)
                     .disabled(!isEnabled)
                     .foregroundColor(.black)
             }
