@@ -25,6 +25,7 @@
 		27AEBC7E2B8511DC0071AF37 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC7D2B8511DC0071AF37 /* Factory.swift */; };
 		27AEBC802B8512560071AF37 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC7F2B8512560071AF37 /* HomeFactory.swift */; };
 		27AEBC822B8513930071AF37 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC812B8513930071AF37 /* HomeViewModel.swift */; };
+		27AEBC852B8518430071AF37 /* RouterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC842B8518430071AF37 /* RouterContainer.swift */; };
 		27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFFC992B7BF30300D8A486 /* SeedWordView.swift */; };
 		27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A1E2B81540D009D681B /* BaseRouter.swift */; };
 		27E51A232B815579009D681B /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A222B815579009D681B /* RouterView.swift */; };
@@ -50,6 +51,7 @@
 		27AEBC7D2B8511DC0071AF37 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		27AEBC7F2B8512560071AF37 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		27AEBC812B8513930071AF37 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		27AEBC842B8518430071AF37 /* RouterContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterContainer.swift; sourceTree = "<group>"; };
 		27CFFC992B7BF30300D8A486 /* SeedWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedWordView.swift; sourceTree = "<group>"; };
 		27E51A1E2B81540D009D681B /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		27E51A222B815579009D681B /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				27723C522B7D5E85004AA6BD /* ViewModelContainer.swift */,
 				27E51A262B8156E6009D681B /* Routeable.swift */,
 				27E51A312B8263A2009D681B /* Destinationable.swift */,
+				27AEBC842B8518430071AF37 /* RouterContainer.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				27E51A342B826850009D681B /* HomeRouter.swift in Sources */,
 				27723C4D2B7D5D57004AA6BD /* SeedViewModel.swift in Sources */,
 				2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */,
+				27AEBC852B8518430071AF37 /* RouterContainer.swift in Sources */,
 				27E51A272B8156E6009D681B /* Routeable.swift in Sources */,
 				27AEBC802B8512560071AF37 /* HomeFactory.swift in Sources */,
 				2782007C2B72DBCA003E1CA6 /* Localizable.swift in Sources */,
