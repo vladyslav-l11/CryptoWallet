@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-final class HomeViewModel: ObservableObject {
-    // TODO
+final class HomeViewModel: RouterContainer, ObservableObject {
+    let router: HomeRouter = HomeRouter()
 }
