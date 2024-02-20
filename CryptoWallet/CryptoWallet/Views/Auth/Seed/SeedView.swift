@@ -43,7 +43,7 @@ struct SeedView: View, ViewModelContainer {
     }
     
     @ObservedObject private var viewModel: SeedViewModel
-    @State private var flow: Flow = .showSeedPhrase
+    @State private var flow: Flow
     private var columns: [GridItem] = [
             GridItem(.flexible()),
             GridItem(.flexible())
