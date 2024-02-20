@@ -22,6 +22,7 @@
 		278F4CCD2B7D56FA00E94543 /* SeedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278F4CCC2B7D56FA00E94543 /* SeedWord.swift */; };
 		279DA4452B72CF420061D6E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA4442B72CF420061D6E1 /* HomeView.swift */; };
 		279DA44F2B72D78B0061D6E1 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 279DA44E2B72D78A0061D6E1 /* Localizable.xcstrings */; };
+		27AEBC7E2B8511DC0071AF37 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC7D2B8511DC0071AF37 /* Factory.swift */; };
 		27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFFC992B7BF30300D8A486 /* SeedWordView.swift */; };
 		27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A1E2B81540D009D681B /* BaseRouter.swift */; };
 		27E51A232B815579009D681B /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A222B815579009D681B /* RouterView.swift */; };
@@ -44,6 +45,7 @@
 		278F4CCC2B7D56FA00E94543 /* SeedWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedWord.swift; sourceTree = "<group>"; };
 		279DA4442B72CF420061D6E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		279DA44E2B72D78A0061D6E1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		27AEBC7D2B8511DC0071AF37 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		27CFFC992B7BF30300D8A486 /* SeedWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedWordView.swift; sourceTree = "<group>"; };
 		27E51A1E2B81540D009D681B /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		27E51A222B815579009D681B /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				27E51A1E2B81540D009D681B /* BaseRouter.swift */,
 				27E51A222B815579009D681B /* RouterView.swift */,
 				27E51A2B2B816433009D681B /* RouteNavigationLink.swift */,
+				27AEBC7D2B8511DC0071AF37 /* Factory.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AEBC7E2B8511DC0071AF37 /* Factory.swift in Sources */,
 				27E51A2C2B816433009D681B /* RouteNavigationLink.swift in Sources */,
 				278F4CCD2B7D56FA00E94543 /* SeedWord.swift in Sources */,
 				279DA4452B72CF420061D6E1 /* HomeView.swift in Sources */,
