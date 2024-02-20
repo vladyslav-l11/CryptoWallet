@@ -104,7 +104,9 @@ struct SeedView: View, ViewModelContainer {
             }
             .fullScreened()
             .frame(alignment: .top)
+            .padding(.top, 96)
             .background(.white)
+            .ignoresSafeArea()
         }
     }
 }
