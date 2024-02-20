@@ -53,6 +53,7 @@ struct SeedView: View, ViewModelContainer {
         Text(flow.title)
             .font(.title)
             .multilineTextAlignment(.center)
+            .foregroundColor(.black)
     }
     
     private var seedWordsGrid: some View {
@@ -101,8 +102,10 @@ struct SeedView: View, ViewModelContainer {
                 }
                 .padding(.horizontal)
             }
-            .frame(maxHeight: .infinity,
+            .frame(maxWidth: .infinity,
+                   maxHeight: .infinity,
                    alignment: .top)
+            .background(.white)
         }
     }
 }
