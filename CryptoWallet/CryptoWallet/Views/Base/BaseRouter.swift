@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class BaseRouter<T: Routeable>: ObservableObject {
+class BaseRouter<T: Routeable> {
     @Environment(\.presentationMode) private var presentationMode
     @State private var route: T.Route?
     
