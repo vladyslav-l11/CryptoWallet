@@ -9,9 +9,11 @@ import Combine
 
 final class SeedViewModel: ObservableObject {
     @Published var words: [SeedWord] = []
+    var originalWords: [SeedWord] = []
     
     init() {
         (1...12).forEach { words.append(SeedWord(number: $0)) }
+        originalWords = words
     }
     
     func confirmSeedPhrase() {
