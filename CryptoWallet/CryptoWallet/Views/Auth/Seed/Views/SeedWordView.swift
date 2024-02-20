@@ -16,13 +16,15 @@ struct SeedWordView: View {
         VStack {
             HStack {
                 Text("\(rowNumber).")
+                    .foregroundColor(.black)
                 TextField(Localizable.enterWordPlaceholder, text: $word)
                     .disabled(!isEnabled)
+                    .foregroundColor(.black)
             }
             Divider()
                 .frame(height: 2)
-                .background(Color.black)
-                .padding(.horizontal)
+                .background(.black)
+                .padding(.leading)
         }
     }
 }
