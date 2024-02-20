@@ -70,5 +70,5 @@ struct HomeView: View, ViewModelContainer {
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel())
+    Factory.home.makeHome()
 }
