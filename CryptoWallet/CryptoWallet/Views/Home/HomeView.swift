@@ -8,11 +8,16 @@
 import SwiftUI
 import rswift
 
-struct HomeView: View {
+struct HomeView: View, ViewModelContainer {
+    typealias ViewModel = HomeViewModel
+    
     private enum C {
         static let buttonsHeight: CGFloat = 48
         static let cornerRadius: CGFloat = 8
     }
+    
+    // MARK: - Properties
+    @ObservedObject private var viewModel: HomeViewModel
     
     private var titleText: Text {
         Text(Localizable.homeTitle)
@@ -50,6 +55,11 @@ struct HomeView: View {
         .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 60))
     }
     
+    // MARK: - Initialization
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack {
             titleText
@@ -60,5 +70,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(viewModel: HomeViewModel())
 }
