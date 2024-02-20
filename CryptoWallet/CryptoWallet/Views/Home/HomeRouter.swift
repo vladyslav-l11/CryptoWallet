@@ -17,9 +17,9 @@ final class HomeRouter: BaseRouter<HomeRouter>, Routeable {
         var desination: some View {
             switch self {
             case .signIn:
-                return SeedView(viewModel: SeedViewModel(), flow: .enterWithSeedPhrase)
+                return Factory.home.makeSeed(flow: .enterWithSeedPhrase)
             case .signUp:
-                return SeedView(viewModel: SeedViewModel(), flow: .showSeedPhrase)
+                return Factory.home.makeSeed(flow: .showSeedPhrase)
             }
         }
     }
