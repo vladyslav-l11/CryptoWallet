@@ -33,7 +33,7 @@ struct HomeView: View, ViewModelContainer {
     
     private var signUpButton: some View {
         button(withKey: Localizable.signUp) {
-            // TODO
+            viewModel.didOpenSignUp()
         }
     }
     

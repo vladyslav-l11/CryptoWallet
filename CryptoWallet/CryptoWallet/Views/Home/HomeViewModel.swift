@@ -13,4 +13,8 @@ final class HomeViewModel: RouterContainer, ObservableObject {
     func didOpenSignIn() {
         router.navigateTo(.signIn)
     }
+    
+    func didOpenSignUp() {
+        router.navigateTo(.signUp)
+    }
 }
