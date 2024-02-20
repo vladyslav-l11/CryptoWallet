@@ -58,7 +58,7 @@ struct SeedView: View, ViewModelContainer {
     
     private var seedWordsGrid: some View {
         LazyVGrid(columns: columns, spacing: 16) {
-            ForEach(Array(viewModel.words.enumerated()), id: \.element) { index, _ in
+            ForEach(Array(viewModel.originalWords.enumerated()), id: \.element) { index, _ in
                 SeedWordView(rowNumber: $viewModel.words[index].number,
                              word: $viewModel.words[index].word,
                              isEnabled: !flow.isReadOnly)
@@ -87,7 +87,7 @@ struct SeedView: View, ViewModelContainer {
         .padding(.top, 32)
     }
     
-    init(viewModel: SeedViewModel, flow: Flow = .showSeedPhrase) {
+    init(viewModel: SeedViewModel, flow: Flow) {
         self.viewModel = viewModel
         self.flow = flow
     }
@@ -110,5 +110,5 @@ struct SeedView: View, ViewModelContainer {
 }
 
 #Preview {
-    SeedView(viewModel: SeedViewModel())
+    SeedView(viewModel: SeedViewModel(), flow: .enterWithSeedPhrase)
 }
