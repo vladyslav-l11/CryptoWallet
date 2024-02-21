@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		270C1C102B86A8FD003BCBED /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C0F2B86A8FD003BCBED /* RswiftLibrary */; };
 		270C1C122B86A8FD003BCBED /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C112B86A8FD003BCBED /* rswift */; };
-		270C1C162B86A913003BCBED /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C152B86A913003BCBED /* Web3 */; };
-		270C1C182B86A913003BCBED /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C172B86A913003BCBED /* Web3ContractABI */; };
-		270C1C1A2B86A913003BCBED /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C192B86A913003BCBED /* Web3PromiseKit */; };
+		270C1C1E2B86B31B003BCBED /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C1D2B86B31B003BCBED /* web3swift */; };
 		2714DF742B714B8F0013CAA5 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714DF732B714B8F0013CAA5 /* AppView.swift */; };
 		2714DF762B714B910013CAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2714DF752B714B910013CAA5 /* Assets.xcassets */; };
 		2714DF792B714B910013CAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2714DF782B714B910013CAA5 /* Preview Assets.xcassets */; };
@@ -69,11 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				270C1C162B86A913003BCBED /* Web3 in Frameworks */,
 				270C1C102B86A8FD003BCBED /* RswiftLibrary in Frameworks */,
-				270C1C182B86A913003BCBED /* Web3ContractABI in Frameworks */,
-				270C1C1A2B86A913003BCBED /* Web3PromiseKit in Frameworks */,
 				270C1C122B86A8FD003BCBED /* rswift in Frameworks */,
+				270C1C1E2B86B31B003BCBED /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +262,7 @@
 			packageProductDependencies = (
 				270C1C0F2B86A8FD003BCBED /* RswiftLibrary */,
 				270C1C112B86A8FD003BCBED /* rswift */,
-				270C1C152B86A913003BCBED /* Web3 */,
-				270C1C172B86A913003BCBED /* Web3ContractABI */,
-				270C1C192B86A913003BCBED /* Web3PromiseKit */,
+				270C1C1D2B86B31B003BCBED /* web3swift */,
 			);
 			productName = CryptoWallet;
 			productReference = 2714DF6E2B714B8F0013CAA5 /* CryptoWallet.app */;
@@ -300,7 +294,7 @@
 			mainGroup = 2714DF652B714B8F0013CAA5;
 			packageReferences = (
 				270C1C0E2B86A8FD003BCBED /* XCRemoteSwiftPackageReference "R.swift" */,
-				270C1C142B86A913003BCBED /* XCRemoteSwiftPackageReference "Web3.swift" */,
+				270C1C1C2B86B31A003BCBED /* XCRemoteSwiftPackageReference "web3swift" */,
 			);
 			productRefGroup = 2714DF6F2B714B8F0013CAA5 /* Products */;
 			projectDirPath = "";
@@ -569,12 +563,12 @@
 				minimumVersion = 7.5.0;
 			};
 		};
-		270C1C142B86A913003BCBED /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+		270C1C1C2B86B31A003BCBED /* XCRemoteSwiftPackageReference "web3swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.8.6;
+				minimumVersion = 3.2.0;
 			};
 		};
 		2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
@@ -598,20 +592,10 @@
 			package = 270C1C0E2B86A8FD003BCBED /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = rswift;
 		};
-		270C1C152B86A913003BCBED /* Web3 */ = {
+		270C1C1D2B86B31B003BCBED /* web3swift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 270C1C142B86A913003BCBED /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3;
-		};
-		270C1C172B86A913003BCBED /* Web3ContractABI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 270C1C142B86A913003BCBED /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3ContractABI;
-		};
-		270C1C192B86A913003BCBED /* Web3PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 270C1C142B86A913003BCBED /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3PromiseKit;
+			package = 270C1C1C2B86B31A003BCBED /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
 		};
 		2714DF8A2B7178CD0013CAA5 /* RswiftGenerateInternalResources */ = {
 			isa = XCSwiftPackageProductDependency;
