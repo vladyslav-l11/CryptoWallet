@@ -301,7 +301,6 @@
 			packageReferences = (
 				2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */,
 				273F0E322B72BCF1003FEFF1 /* XCRemoteSwiftPackageReference "Web3.swift" */,
-				270C1C082B8693D8003BCBED /* XCRemoteSwiftPackageReference "web3auth-swift-sdk" */,
 			);
 			productRefGroup = 2714DF6F2B714B8F0013CAA5 /* Products */;
 			projectDirPath = "";
@@ -562,14 +561,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		270C1C082B8693D8003BCBED /* XCRemoteSwiftPackageReference "web3auth-swift-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Web3Auth/web3auth-swift-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.5.1;
-			};
-		};
 		2714DF852B71788D0013CAA5 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.git";
