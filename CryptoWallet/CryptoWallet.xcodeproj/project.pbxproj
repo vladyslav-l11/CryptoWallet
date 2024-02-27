@@ -32,6 +32,7 @@
 		27E51A2C2B816433009D681B /* RouteNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A2B2B816433009D681B /* RouteNavigationLink.swift */; };
 		27E51A322B8263A2009D681B /* Destinationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A312B8263A2009D681B /* Destinationable.swift */; };
 		27E51A342B826850009D681B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A332B826850009D681B /* HomeRouter.swift */; };
+		27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */; };
 		27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F82CC22B7563D700B3AEE9 /* SeedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		27E51A2B2B816433009D681B /* RouteNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteNavigationLink.swift; sourceTree = "<group>"; };
 		27E51A312B8263A2009D681B /* Destinationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinationable.swift; sourceTree = "<group>"; };
 		27E51A332B826850009D681B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		27F82CC22B7563D700B3AEE9 /* SeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 				27E51A222B815579009D681B /* RouterView.swift */,
 				27E51A2B2B816433009D681B /* RouteNavigationLink.swift */,
 				27AEBC7D2B8511DC0071AF37 /* Factory.swift */,
+				27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				27723C532B7D5E85004AA6BD /* ViewModelContainer.swift in Sources */,
 				27E51A322B8263A2009D681B /* Destinationable.swift in Sources */,
 				27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */,
+				27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */,
 				2714DF742B714B8F0013CAA5 /* AppView.swift in Sources */,
 				271E24E12B8544C700F19C85 /* View+Extensions.swift in Sources */,
 				27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */,
