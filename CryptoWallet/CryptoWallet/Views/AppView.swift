@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct AppView: View {
-    private lazy var platform = Platform()
-    
     var body: some View {
         Factory.home.makeHome()
     }
