@@ -18,7 +18,7 @@ extension AppError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .web3(let error):
-            return error.errorDescription
+            return error.localizedDescription
         case .underlying(let error):
             return error.localizedDescription
         default:
