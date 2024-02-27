@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
-    let useCases: Platform
+    let useCases: UseCaseProvider
     
     var body: some View {
         Factory.home.makeHome()
