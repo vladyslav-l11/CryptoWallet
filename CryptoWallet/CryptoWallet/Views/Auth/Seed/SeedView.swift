@@ -25,7 +25,7 @@ struct SeedView: View, ViewModelContainer {
     
     private var seedWordsGrid: some View {
         LazyVGrid(columns: columns, spacing: 16) {
-            ForEach(Array(viewModel.originalWords.enumerated()), id: \.element) { index, _ in
+            ForEach(viewModel.originalWords.indices, id: \.self) { index in
                 SeedWordView(rowNumber: $viewModel.words[index].number,
                              word: $viewModel.words[index].word,
                              isEnabled: !viewModel.flow.isReadOnly)
