@@ -8,9 +8,11 @@
 import Foundation
 
 final class Platform: UseCaseProvider {
+    static let shared = Platform()
+    
     let session: SessionUseCase
     
-    init() {
+    private init() {
         session = SessionService()
     }
 }
