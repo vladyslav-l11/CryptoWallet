@@ -85,6 +85,7 @@ struct SeedView: View, ViewModelContainer {
         .background(.black)
         .clipShape(RoundedRectangle(cornerRadius: 24))
         .padding(.top, 32)
+        .enabled(viewModel.isValid.value)
     }
     
     init(viewModel: SeedViewModel, flow: Flow) {

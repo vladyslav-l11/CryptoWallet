@@ -12,6 +12,11 @@ extension View {
     func fullScreened() -> some View {
         frame(maxWidth: .infinity, maxHeight: .infinity)
     }
+    
+    func enabled(_ isEnabled: Bool) -> some View {
+        opacity(isEnabled ? 1 : 0.5)
+            .disabled(!isEnabled)
+    }
 }
 
 // MARK: - TextField
