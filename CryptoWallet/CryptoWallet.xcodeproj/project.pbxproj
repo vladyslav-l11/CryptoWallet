@@ -38,6 +38,7 @@
 		27F230192B8E6B3500FBAAFA /* SessionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230182B8E6B3500FBAAFA /* SessionUseCase.swift */; };
 		27F2301C2B8E6B4B00FBAAFA /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2301B2B8E6B4B00FBAAFA /* SessionService.swift */; };
 		27F2301E2B8E710C00FBAAFA /* UseCasesConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2301D2B8E710C00FBAAFA /* UseCasesConsumer.swift */; };
+		27F230262B8E875400FBAAFA /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230252B8E875300FBAAFA /* AsyncTask.swift */; };
 		27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F82CC22B7563D700B3AEE9 /* SeedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		27F230182B8E6B3500FBAAFA /* SessionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUseCase.swift; sourceTree = "<group>"; };
 		27F2301B2B8E6B4B00FBAAFA /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		27F2301D2B8E710C00FBAAFA /* UseCasesConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesConsumer.swift; sourceTree = "<group>"; };
+		27F230252B8E875300FBAAFA /* AsyncTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
 		27F82CC22B7563D700B3AEE9 /* SeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 		2714DF7F2B71726F0013CAA5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				27F230242B8E874700FBAAFA /* Common */,
 				271E24DF2B8544B700F19C85 /* Extensions */,
 				27723C4F2B7D5E74004AA6BD /* Protocols */,
 				2782007A2B72DBA8003E1CA6 /* String */,
@@ -258,6 +261,14 @@
 			path = Session;
 			sourceTree = "<group>";
 		};
+		27F230242B8E874700FBAAFA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27F230252B8E875300FBAAFA /* AsyncTask.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		27F82CBC2B75633A00B3AEE9 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +393,7 @@
 				2714DF742B714B8F0013CAA5 /* AppView.swift in Sources */,
 				271E24E12B8544C700F19C85 /* View+Extensions.swift in Sources */,
 				27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */,
+				27F230262B8E875400FBAAFA /* AsyncTask.swift in Sources */,
 				27F2301E2B8E710C00FBAAFA /* UseCasesConsumer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
