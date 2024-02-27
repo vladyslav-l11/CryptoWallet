@@ -11,3 +11,11 @@ struct SeedWord: Hashable {
     var number: Int
     var word: String = ""
 }
+
+extension Array where Element == SeedWord {
+    mutating func empty() {
+        indices.forEach {
+            self[$0].word = ""
+        }
+    }
+}

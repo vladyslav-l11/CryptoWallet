@@ -15,7 +15,7 @@ final class HomeFactory {
         HomeView(viewModel: HomeViewModel())
     }
     
-    func makeSeed(useCases: UseCaseProvider, flow: SeedView.Flow) -> SeedView {
-        SeedView(viewModel: SeedViewModel(useCases: useCases), flow: flow)
+    func makeSeed(useCases: UseCaseProvider, flow: SeedViewModel.Flow) -> SeedView {
+        SeedView(viewModel: SeedViewModel(useCases: useCases, flow: flow))
     }
 }

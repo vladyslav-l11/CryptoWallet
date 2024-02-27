@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SessionUseCase {
-    // TODO
+    func createSeedPhrase() -> AsyncTask<[String]>
 }

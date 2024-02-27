@@ -10,47 +10,14 @@ import SwiftUI
 struct SeedView: View, ViewModelContainer {
     typealias ViewModel = SeedViewModel
     
-    enum Flow {
-        case showSeedPhrase
-        case confirmSeedPhrase
-        case enterWithSeedPhrase
-        
-        var title: LocalizedStringKey {
-            switch self {
-            case .showSeedPhrase:
-                return Localizable.saveSeedPhrase
-            case .confirmSeedPhrase:
-                return Localizable.confirmSeedPhrase
-            case .enterWithSeedPhrase:
-                return Localizable.enterSeedPhrase
-            }
-        }
-        
-        var isReadOnly: Bool {
-            self == .showSeedPhrase
-        }
-        
-        var buttonTitle: LocalizedStringKey {
-            switch self {
-            case .showSeedPhrase:
-                return Localizable.saveSeedPhraseButton
-            case .confirmSeedPhrase:
-                return Localizable.confirmSeedPhraseButton
-            case .enterWithSeedPhrase:
-                return Localizable.enterSeedPhraseButton
-            }
-        }
-    }
-    
     @ObservedObject private var viewModel: SeedViewModel
-    @State private var flow: Flow
     private var columns: [GridItem] = [
             GridItem(.flexible()),
             GridItem(.flexible())
         ]
     
     private var titleText: some View {
-        Text(flow.title)
+        Text(viewModel.flow.title)
             .font(.title)
             .multilineTextAlignment(.center)
             .foregroundColor(.black)
@@ -61,23 +28,23 @@ struct SeedView: View, ViewModelContainer {
             ForEach(Array(viewModel.originalWords.enumerated()), id: \.element) { index, _ in
                 SeedWordView(rowNumber: $viewModel.words[index].number,
                              word: $viewModel.words[index].word,
-                             isEnabled: !flow.isReadOnly)
+                             isEnabled: !viewModel.flow.isReadOnly)
             }
         }
     }
     
     private var performButton: some View {
         Button(action: {
-            switch flow {
+            switch viewModel.flow {
             case .showSeedPhrase:
-                flow = .confirmSeedPhrase
+                viewModel.switchToConfirm()
             case .confirmSeedPhrase:
                 viewModel.confirmSeedPhrase()
             case .enterWithSeedPhrase:
                 viewModel.signIn()
             }
         }, label: {
-            Text(flow.buttonTitle)
+            Text(viewModel.flow.buttonTitle)
                 .foregroundStyle(.white)
                 .padding(.horizontal)
         })
@@ -88,9 +55,8 @@ struct SeedView: View, ViewModelContainer {
         .enabled(viewModel.isValid.value)
     }
     
-    init(viewModel: SeedViewModel, flow: Flow) {
+    init(viewModel: SeedViewModel) {
         self.viewModel = viewModel
-        self.flow = flow
     }
     
     var body: some View {
@@ -113,5 +79,5 @@ struct SeedView: View, ViewModelContainer {
 }
 
 #Preview {
-    SeedView(viewModel: SeedViewModel(useCases: Platform.shared), flow: .enterWithSeedPhrase)
+    SeedView(viewModel: SeedViewModel(useCases: Platform.shared, flow: .enterWithSeedPhrase))
 }
