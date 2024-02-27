@@ -8,5 +8,9 @@
 import Foundation
 
 final class Platform: UseCaseProvider {
-    // TODO
+    let session: SessionUseCase
+    
+    init() {
+        session = SessionService()
+    }
 }
