@@ -11,12 +11,10 @@ import SwiftUI
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-
-    private lazy var platform = Platform()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let contentView = AppView(useCases: platform)
+        let contentView = AppView()
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = UIHostingController(rootView: contentView)
         self.window = window

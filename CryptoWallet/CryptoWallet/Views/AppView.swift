@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
-    let useCases: UseCaseProvider
+    private lazy var platform = Platform()
     
     var body: some View {
         Factory.home.makeHome()
@@ -16,5 +16,5 @@ struct AppView: View {
 }
 
 #Preview {
-    AppView(useCases: Platform())
+    AppView()
 }
