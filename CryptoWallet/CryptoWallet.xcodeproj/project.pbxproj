@@ -33,6 +33,7 @@
 		27E51A322B8263A2009D681B /* Destinationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A312B8263A2009D681B /* Destinationable.swift */; };
 		27E51A342B826850009D681B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A332B826850009D681B /* HomeRouter.swift */; };
 		27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */; };
+		27F2300B2B8E688A00FBAAFA /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2300A2B8E688A00FBAAFA /* Platform.swift */; };
 		27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F82CC22B7563D700B3AEE9 /* SeedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		27E51A312B8263A2009D681B /* Destinationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinationable.swift; sourceTree = "<group>"; };
 		27E51A332B826850009D681B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		27F2300A2B8E688A00FBAAFA /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		27F82CC22B7563D700B3AEE9 /* SeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				2714DF802B7173AE0013CAA5 /* Models */,
 				2714DF7F2B71726F0013CAA5 /* Components */,
 				2714DF832B7173D80013CAA5 /* AppDelegate.swift */,
+				27F2300A2B8E688A00FBAAFA /* Platform.swift */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				278F4CCD2B7D56FA00E94543 /* SeedWord.swift in Sources */,
 				279DA4452B72CF420061D6E1 /* HomeView.swift in Sources */,
 				27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */,
+				27F2300B2B8E688A00FBAAFA /* Platform.swift in Sources */,
 				27E51A342B826850009D681B /* HomeRouter.swift in Sources */,
 				27723C4D2B7D5D57004AA6BD /* SeedViewModel.swift in Sources */,
 				2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */,

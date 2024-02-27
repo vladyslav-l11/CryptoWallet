@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct AppView: View {
+    let useCases: Platform
+    
     var body: some View {
         Factory.home.makeHome()
     }
 }
 
 #Preview {
-    AppView()
+    AppView(useCases: Platform())
 }
