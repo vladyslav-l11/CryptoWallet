@@ -38,7 +38,6 @@
 		27F230192B8E6B3500FBAAFA /* SessionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230182B8E6B3500FBAAFA /* SessionUseCase.swift */; };
 		27F2301C2B8E6B4B00FBAAFA /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2301B2B8E6B4B00FBAAFA /* SessionService.swift */; };
 		27F2301E2B8E710C00FBAAFA /* UseCasesConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2301D2B8E710C00FBAAFA /* UseCasesConsumer.swift */; };
-		27F230212B8E7FBF00FBAAFA /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230202B8E7FBF00FBAAFA /* BaseFactory.swift */; };
 		27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F82CC22B7563D700B3AEE9 /* SeedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +71,6 @@
 		27F230182B8E6B3500FBAAFA /* SessionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUseCase.swift; sourceTree = "<group>"; };
 		27F2301B2B8E6B4B00FBAAFA /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		27F2301D2B8E710C00FBAAFA /* UseCasesConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesConsumer.swift; sourceTree = "<group>"; };
-		27F230202B8E7FBF00FBAAFA /* BaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFactory.swift; sourceTree = "<group>"; };
 		27F82CC22B7563D700B3AEE9 /* SeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,7 +237,6 @@
 				27E51A2B2B816433009D681B /* RouteNavigationLink.swift */,
 				27AEBC7D2B8511DC0071AF37 /* Factory.swift */,
 				27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */,
-				27F230202B8E7FBF00FBAAFA /* BaseFactory.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -361,7 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27AEBC7E2B8511DC0071AF37 /* Factory.swift in Sources */,
-				27F230212B8E7FBF00FBAAFA /* BaseFactory.swift in Sources */,
 				27AEBC822B8513930071AF37 /* HomeViewModel.swift in Sources */,
 				27E51A2C2B816433009D681B /* RouteNavigationLink.swift in Sources */,
 				278F4CCD2B7D56FA00E94543 /* SeedWord.swift in Sources */,
