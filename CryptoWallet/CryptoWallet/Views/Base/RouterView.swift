@@ -12,10 +12,11 @@ struct RouterView<R: Routeable, Content: View>: View {
     
     @ObservedObject private var router: Router
     private let content: Content
+    private let useCases: UseCaseProvider = Platform.shared
     
     private var links: some View {
         ForEach(Array(R.Route.allCases), id: \.self) { route in
-            RouteNavigationLink<R, R.Route.Destination>(selection: $router.route, destination: route.desination, tag: route)
+            RouteNavigationLink<R, R.Route.Destination>(selection: $router.route, destination: route.getDestination(useCases: useCases), tag: route)
         }
     }
     

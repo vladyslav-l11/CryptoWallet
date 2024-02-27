@@ -9,5 +9,5 @@ import SwiftUI
 
 protocol Destinationable {
     associatedtype Destination: View
-    var desination: Destination { get }
+    func getDestination(useCases: UseCaseProvider) -> Destination
 }

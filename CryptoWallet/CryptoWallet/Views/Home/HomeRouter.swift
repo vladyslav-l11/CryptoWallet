@@ -14,12 +14,12 @@ final class HomeRouter: BaseRouter<HomeRouter>, Routeable {
         case signIn
         case signUp
         
-        var desination: some View {
+        func getDestination(useCases: UseCaseProvider) -> some View {
             switch self {
             case .signIn:
-                return Factory.home.makeSeed(flow: .enterWithSeedPhrase)
+                return Factory.home.makeSeed(useCases: useCases, flow: .enterWithSeedPhrase)
             case .signUp:
-                return Factory.home.makeSeed(flow: .showSeedPhrase)
+                return Factory.home.makeSeed(useCases: useCases, flow: .showSeedPhrase)
             }
         }
     }
