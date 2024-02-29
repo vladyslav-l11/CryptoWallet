@@ -19,7 +19,7 @@ final class SessionService: SessionUseCase {
                 promise(.failure(AppError.web3(error: error)))
             }
         }
-        .receive(on: RunLoop.main)
+        .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
     }
     
@@ -43,7 +43,7 @@ final class SessionService: SessionUseCase {
                 promise(.failure(AppError.web3(error: error)))
             }
         }
-        .receive(on: RunLoop.main)
+        .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
     }
 }
