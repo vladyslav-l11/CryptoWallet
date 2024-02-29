@@ -47,6 +47,7 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
     @Published var isValid = CurrentValueSubject<Bool, Never>(false)
     @Published var words: [SeedWord] = []
     @Published var flow: Flow
+    @Published var isLoading: Bool = false
     var originalWords: [SeedWord] = []
     
     let useCases: UseCases
@@ -72,7 +73,7 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
         if flow == .showSeedPhrase {
             useCases.session.createSeedPhrase()
                 .sink(
-                    receiveCompletion: { _ in },
+                    receiveCompletion: { status in print(status) },
                     receiveValue: { [weak self] in
                         $0.enumerated().forEach { index, word in
                             self?.words[index].word = word
@@ -85,11 +86,27 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
     
     // MARK: - Actions
     func confirmSeedPhrase() {
-        // TODO
+        enterAccount()
     }
     
     func signIn() {
-        // TODO
+        enterAccount()
+    }
+    
+    private func enterAccount() {
+        isLoading = true
+        useCases.session.enterAccount(words.map(\.word))
+            .sink(
+                receiveCompletion: { [weak self] status in
+                    print(status)
+                    self?.isLoading = false
+                },
+                receiveValue: { [weak self] _ in
+                    print("success")
+                    self?.isLoading = false
+                }
+            )
+            .store(in: &cancellable)
     }
     
     func switchToConfirm() {
