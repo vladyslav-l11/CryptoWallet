@@ -9,4 +9,5 @@ import Foundation
 
 protocol SessionUseCase {
     func createSeedPhrase() -> AsyncTask<[String]>
+    func enterAccount(_ mnemonics: [String]) -> AsyncTask<Wallet>
 }
