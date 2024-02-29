@@ -95,18 +95,20 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
     
     private func enterAccount() {
         isLoading = true
-        useCases.session.enterAccount(words.map(\.word))
-            .sink(
-                receiveCompletion: { [weak self] status in
-                    print(status)
-                    self?.isLoading = false
-                },
-                receiveValue: { [weak self] _ in
-                    print("success")
-                    self?.isLoading = false
-                }
-            )
-            .store(in: &cancellable)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.useCases.session.enterAccount(self.words.map(\.word))
+                .sink(
+                    receiveCompletion: { [weak self] status in
+                        print(status)
+                        self?.isLoading = false
+                    },
+                    receiveValue: { [weak self] _ in
+                        print("success")
+                        self?.isLoading = false
+                    }
+                )
+                .store(in: &self.cancellable)
+        }
     }
     
     func switchToConfirm() {
