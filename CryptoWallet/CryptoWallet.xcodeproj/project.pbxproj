@@ -15,6 +15,7 @@
 		2714DF792B714B910013CAA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2714DF782B714B910013CAA5 /* Preview Assets.xcassets */; };
 		2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714DF832B7173D80013CAA5 /* AppDelegate.swift */; };
 		271E24E12B8544C700F19C85 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E24E02B8544C700F19C85 /* View+Extensions.swift */; };
+		274245222B910CE200583CA0 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274245212B910CE200583CA0 /* ActivityView.swift */; };
 		27431A852B90FE66006D2ACE /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27431A842B90FE66006D2ACE /* Wallet.swift */; };
 		27723C4D2B7D5D57004AA6BD /* SeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27723C4C2B7D5D57004AA6BD /* SeedViewModel.swift */; };
 		27723C532B7D5E85004AA6BD /* ViewModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27723C522B7D5E85004AA6BD /* ViewModelContainer.swift */; };
@@ -33,6 +34,7 @@
 		27E51A2C2B816433009D681B /* RouteNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A2B2B816433009D681B /* RouteNavigationLink.swift */; };
 		27E51A322B8263A2009D681B /* Destinationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A312B8263A2009D681B /* Destinationable.swift */; };
 		27E51A342B826850009D681B /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A332B826850009D681B /* HomeRouter.swift */; };
+		27E9B8E52B911C2900FF4E89 /* AnyCancellable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E9B8E42B911C2900FF4E89 /* AnyCancellable+Extensions.swift */; };
 		27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */; };
 		27F2300B2B8E688A00FBAAFA /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2300A2B8E688A00FBAAFA /* Platform.swift */; };
 		27F230142B8E6AC900FBAAFA /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F230132B8E6AC900FBAAFA /* UseCaseProvider.swift */; };
@@ -51,6 +53,7 @@
 		2714DF782B714B910013CAA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2714DF832B7173D80013CAA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		271E24E02B8544C700F19C85 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		274245212B910CE200583CA0 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		27431A842B90FE66006D2ACE /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		27723C4C2B7D5D57004AA6BD /* SeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedViewModel.swift; sourceTree = "<group>"; };
 		27723C522B7D5E85004AA6BD /* ViewModelContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelContainer.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		27E51A2B2B816433009D681B /* RouteNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteNavigationLink.swift; sourceTree = "<group>"; };
 		27E51A312B8263A2009D681B /* Destinationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinationable.swift; sourceTree = "<group>"; };
 		27E51A332B826850009D681B /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		27E9B8E42B911C2900FF4E89 /* AnyCancellable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+Extensions.swift"; sourceTree = "<group>"; };
 		27F230052B8E5FD400FBAAFA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		27F2300A2B8E688A00FBAAFA /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		27F230132B8E6AC900FBAAFA /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		2714DF812B7173B90013CAA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2742451E2B910CD400583CA0 /* Common */,
 				27E51A1B2B8153FF009D681B /* Base */,
 				27F82CBC2B75633A00B3AEE9 /* Auth */,
 				279DA4432B72CF360061D6E1 /* Home */,
@@ -178,8 +183,17 @@
 			isa = PBXGroup;
 			children = (
 				271E24E02B8544C700F19C85 /* View+Extensions.swift */,
+				27E9B8E42B911C2900FF4E89 /* AnyCancellable+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2742451E2B910CD400583CA0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				274245212B910CE200583CA0 /* ActivityView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		27431A832B90FE58006D2ACE /* Wallet */ = {
@@ -396,6 +410,7 @@
 				278F4CCD2B7D56FA00E94543 /* SeedWord.swift in Sources */,
 				279DA4452B72CF420061D6E1 /* HomeView.swift in Sources */,
 				27F82CC32B7563D700B3AEE9 /* SeedView.swift in Sources */,
+				27E9B8E52B911C2900FF4E89 /* AnyCancellable+Extensions.swift in Sources */,
 				27F2300B2B8E688A00FBAAFA /* Platform.swift in Sources */,
 				27E51A342B826850009D681B /* HomeRouter.swift in Sources */,
 				27F230142B8E6AC900FBAAFA /* UseCaseProvider.swift in Sources */,
@@ -413,6 +428,7 @@
 				27F2302A2B8E8AEB00FBAAFA /* AppError.swift in Sources */,
 				27431A852B90FE66006D2ACE /* Wallet.swift in Sources */,
 				27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */,
+				274245222B910CE200583CA0 /* ActivityView.swift in Sources */,
 				27F230192B8E6B3500FBAAFA /* SessionUseCase.swift in Sources */,
 				2714DF742B714B8F0013CAA5 /* AppView.swift in Sources */,
 				271E24E12B8544C700F19C85 /* View+Extensions.swift in Sources */,
