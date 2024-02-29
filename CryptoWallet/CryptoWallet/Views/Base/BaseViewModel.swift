@@ -9,4 +9,8 @@ import Combine
 
 class BaseViewModel: ObservableObject {
     var cancellable = Set<AnyCancellable>()
+    
+    deinit {
+        cancellable.cancellAll()
+    }
 }
