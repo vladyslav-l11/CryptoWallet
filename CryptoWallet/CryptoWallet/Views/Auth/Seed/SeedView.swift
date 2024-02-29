@@ -61,13 +61,16 @@ struct SeedView: View, ViewModelContainer {
     
     var body: some View {
         GeometryReader { _ in
-            VStack {
+            ZStack {
                 ScrollView {
                     titleText
                     seedWordsGrid
                     performButton
                 }
                 .padding(.horizontal)
+                
+                ActivityView()
+                    .hidden(!viewModel.isLoading)
             }
             .fullScreened()
             .frame(alignment: .top)
