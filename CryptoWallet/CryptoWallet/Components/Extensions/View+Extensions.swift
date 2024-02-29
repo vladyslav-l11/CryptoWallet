@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - Size
+// MARK: - View
 extension View {
     func fullScreened() -> some View {
         frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -16,6 +16,14 @@ extension View {
     func enabled(_ isEnabled: Bool) -> some View {
         opacity(isEnabled ? 1 : 0.5)
             .disabled(!isEnabled)
+    }
+    
+    @ViewBuilder func hidden(_ isHidden: Bool) -> some View {
+        if isHidden {
+            hidden()
+        } else {
+            self
+        }
     }
 }
 
