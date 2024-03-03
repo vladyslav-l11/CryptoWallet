@@ -9,4 +9,5 @@ import Foundation
 
 final class Factory {
     static let home = HomeFactory.main
+    static let seed = SeedFactory.main
 }
