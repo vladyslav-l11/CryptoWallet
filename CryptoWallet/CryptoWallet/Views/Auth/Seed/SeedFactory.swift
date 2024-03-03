@@ -11,7 +11,7 @@ final class SeedFactory {
     static let main = SeedFactory()
     private init() {}
     
-    func makeSeed(useCases: UseCaseProvider, flow: SeedViewModel.Flow) -> SeedView {
-        SeedView(viewModel: SeedViewModel(useCases: useCases, flow: flow))
+    func makeMain() -> MainView {
+        MainView()
     }
 }
