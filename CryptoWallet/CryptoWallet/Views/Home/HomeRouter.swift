@@ -13,13 +13,16 @@ final class HomeRouter: BaseRouter<HomeRouter>, Routeable {
     enum HomeRoute: Int, RouteBaseType {
         case signIn
         case signUp
+        case main
         
-        func getDestination(useCases: UseCaseProvider) -> some View {
+        @ViewBuilder func getDestination(useCases: UseCaseProvider) -> some View {
             switch self {
             case .signIn:
-                return Factory.home.makeSeed(useCases: useCases, flow: .enterWithSeedPhrase)
+                Factory.home.makeSeed(useCases: useCases, flow: .enterWithSeedPhrase)
             case .signUp:
-                return Factory.home.makeSeed(useCases: useCases, flow: .showSeedPhrase)
+                Factory.home.makeSeed(useCases: useCases, flow: .showSeedPhrase)
+            case .main:
+                Factory.home.makeMain()
             }
         }
     }
