@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-final class SeedViewModel: BaseViewModel, UseCasesConsumer {
+final class SeedViewModel: BaseViewModel, UseCasesConsumer, RouterContainer {
     typealias UseCases = HasSessionUseCase
     
     enum Flow {
@@ -48,14 +48,16 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
     @Published var words: [SeedWord] = []
     @Published var flow: Flow
     @Published var isLoading: Bool = false
+    weak var router: HomeRouter?
     var originalWords: [SeedWord] = []
     
     let useCases: UseCases
     
     // MARK: - Initialization
-    init(useCases: UseCases, flow: Flow) {
+    init(useCases: UseCases, router: HomeRouter, flow: Flow) {
         self.flow = flow
         self.useCases = useCases
+        self.router = router
         super.init()
         (1...12).forEach { words.append(SeedWord(number: $0)) }
         originalWords = words
@@ -103,6 +105,7 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
                     },
                     receiveValue: { [weak self] _ in
                         self?.isLoading = false
+                        self?.router?.navigateTo(.main)
                     }
                 )
                 .store(in: &self.cancellable)
