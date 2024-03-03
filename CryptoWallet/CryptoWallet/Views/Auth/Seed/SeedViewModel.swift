@@ -73,7 +73,7 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
         if flow == .showSeedPhrase {
             useCases.session.createSeedPhrase()
                 .sink(
-                    receiveCompletion: { status in print(status) },
+                    receiveCompletion: { _ in },
                     receiveValue: { [weak self] in
                         $0.enumerated().forEach { index, word in
                             self?.words[index].word = word
@@ -99,11 +99,9 @@ final class SeedViewModel: BaseViewModel, UseCasesConsumer {
             self.useCases.session.enterAccount(self.words.map(\.word))
                 .sink(
                     receiveCompletion: { [weak self] status in
-                        print(status)
                         self?.isLoading = false
                     },
                     receiveValue: { [weak self] _ in
-                        print("success")
                         self?.isLoading = false
                     }
                 )
