@@ -8,13 +8,17 @@
 import SwiftUI
 
 final class HomeViewModel: RouterContainer, ObservableObject {
-    var router: HomeRouter = HomeRouter()
+    weak var router: HomeRouter?
+    
+    init(router: HomeRouter) {
+        self.router = router
+    }
     
     func didOpenSignIn() {
-        router.navigateTo(.signIn)
+        router?.navigateTo(.signIn)
     }
     
     func didOpenSignUp() {
-        router.navigateTo(.signUp)
+        router?.navigateTo(.signUp)
     }
 }

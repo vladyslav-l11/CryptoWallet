@@ -82,5 +82,5 @@ struct SeedView: View, ViewModelContainer {
 }
 
 #Preview {
-    SeedView(viewModel: SeedViewModel(useCases: Platform.shared, flow: .enterWithSeedPhrase))
+    SeedView(viewModel: SeedViewModel(useCases: Platform.shared, router: HomeRouter(), flow: .enterWithSeedPhrase))
 }

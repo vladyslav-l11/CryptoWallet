@@ -20,8 +20,8 @@ struct RouterView<R: Routeable, Content: View>: View {
         }
     }
     
-    init(router: Router, @ViewBuilder content: @escaping () -> Content) {
-        self.router = router
+    init(router: Router?, @ViewBuilder content: @escaping () -> Content) {
+        self.router = router ?? BaseRouter()
         self.content = content()
     }
     

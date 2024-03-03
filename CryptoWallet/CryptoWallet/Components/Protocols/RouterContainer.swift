@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RouterContainer {
+protocol RouterContainer: AnyObject {
     associatedtype Router
     
     var router: Router { get }
