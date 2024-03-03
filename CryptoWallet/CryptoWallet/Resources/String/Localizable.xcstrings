@@ -1,6 +1,20 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld." : {
+
+    },
+    "enter.word.placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter word"
+          }
+        }
+      }
+    },
     "home.sign.in" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -30,6 +44,72 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Crypto Wallet"
+          }
+        }
+      }
+    },
+    "sign.in.enter.seed.phrase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your seed phrase"
+          }
+        }
+      }
+    },
+    "sign.in.enter.seed.phrase.button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign In"
+          }
+        }
+      }
+    },
+    "sign.up.confirm.seed.phrase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm your seed phrase"
+          }
+        }
+      }
+    },
+    "sign.up.confirm.seed.phrase.button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        }
+      }
+    },
+    "sign.up.save.seed.phrase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write your seed phrase somewhere"
+          }
+        }
+      }
+    },
+    "sign.up.save.seed.phrase.button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I've written"
           }
         }
       }

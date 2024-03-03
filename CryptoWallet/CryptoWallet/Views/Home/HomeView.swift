@@ -8,26 +8,32 @@
 import SwiftUI
 import rswift
 
-struct HomeView: View {
+struct HomeView: View, ViewModelContainer {
+    typealias ViewModel = HomeViewModel
+    
     private enum C {
         static let buttonsHeight: CGFloat = 48
         static let cornerRadius: CGFloat = 8
     }
     
+    // MARK: - Properties
+    @ObservedObject private var viewModel: HomeViewModel
+    
     private var titleText: Text {
         Text(Localizable.homeTitle)
             .font(.title)
+            .foregroundColor(.black)
     }
     
     private var signInButton: some View {
         button(withKey: Localizable.signIn) {
-            // TODO
+            viewModel.didOpenSignIn()
         }
     }
     
     private var signUpButton: some View {
         button(withKey: Localizable.signUp) {
-            // TODO
+            viewModel.didOpenSignUp()
         }
     }
     
@@ -50,15 +56,24 @@ struct HomeView: View {
         .padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 60))
     }
     
+    // MARK: - Initialization
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
-        VStack {
-            titleText
-            signInButton
-            signUpButton
+        RouterView(router: viewModel.router) {
+            VStack {
+                titleText
+                signInButton
+                signUpButton
+            }
+            .fullScreened()
+            .background(.white)
         }
     }
 }
 
 #Preview {
-    HomeView()
+    Factory.home.makeHome()
 }
