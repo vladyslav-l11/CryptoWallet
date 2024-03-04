@@ -48,6 +48,17 @@
         }
       }
     },
+    "main.transaction" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transfer"
+          }
+        }
+      }
+    },
     "sign.in.enter.seed.phrase" : {
       "extractionState" : "manual",
       "localizations" : {
