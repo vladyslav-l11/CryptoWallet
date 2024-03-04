@@ -12,8 +12,10 @@ struct TokenView: View {
     var title: LocalizedStringKey
     var action: () -> Void
     
-    private var image: Image {
+    private var image: some View {
         Image(uiImage: uiImage)
+            .resizable()
+            .frame(width: 24, height: 24)
     }
     
     private var titleText: Text {
@@ -51,5 +53,5 @@ struct TokenView: View {
 }
 
 #Preview {
-    TokenView(uiImage: .add, title: Localizable.mainEth) {}
+    TokenView(uiImage: R.image.icETH()!, title: Localizable.mainEth) {}
 }
