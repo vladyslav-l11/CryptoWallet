@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270636AB2B965519007C3CFD /* TokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270636AA2B965519007C3CFD /* TokenView.swift */; };
+		270636AE2B9658EE007C3CFD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270636AD2B9658EE007C3CFD /* MainViewModel.swift */; };
 		270C1C102B86A8FD003BCBED /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C0F2B86A8FD003BCBED /* RswiftLibrary */; };
 		270C1C122B86A8FD003BCBED /* rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C112B86A8FD003BCBED /* rswift */; };
 		270C1C1E2B86B31B003BCBED /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 270C1C1D2B86B31B003BCBED /* web3swift */; };
@@ -48,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		270636AA2B965519007C3CFD /* TokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenView.swift; sourceTree = "<group>"; };
+		270636AD2B9658EE007C3CFD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		2714DF6E2B714B8F0013CAA5 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2714DF732B714B8F0013CAA5 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		2714DF752B714B910013CAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270636A82B9654DD007C3CFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				270636AA2B965519007C3CFD /* TokenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2714DF652B714B8F0013CAA5 = {
 			isa = PBXGroup;
 			children = (
@@ -223,7 +235,9 @@
 		2773BB6F2B94DE87003A202E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				270636A82B9654DD007C3CFD /* Views */,
 				2773BB702B94DE98003A202E /* MainView.swift */,
+				270636AD2B9658EE007C3CFD /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -438,7 +452,9 @@
 				27E51A322B8263A2009D681B /* Destinationable.swift in Sources */,
 				27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */,
 				27F2302A2B8E8AEB00FBAAFA /* AppError.swift in Sources */,
+				270636AB2B965519007C3CFD /* TokenView.swift in Sources */,
 				27431A852B90FE66006D2ACE /* Wallet.swift in Sources */,
+				270636AE2B9658EE007C3CFD /* MainViewModel.swift in Sources */,
 				27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */,
 				274245222B910CE200583CA0 /* ActivityView.swift in Sources */,
 				27F230192B8E6B3500FBAAFA /* SessionUseCase.swift in Sources */,
