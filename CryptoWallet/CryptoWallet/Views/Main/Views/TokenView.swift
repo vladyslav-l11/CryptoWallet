@@ -20,6 +20,7 @@ struct TokenView: View {
     
     private var titleText: Text {
         Text(title)
+            .foregroundColor(.black)
     }
     
     private var transactionButton: some View {
