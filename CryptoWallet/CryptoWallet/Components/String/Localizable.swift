@@ -21,4 +21,7 @@ enum Localizable {
     static let enterSeedPhrase: LocalizedStringKey = "sign.in.enter.seed.phrase"
     static let enterSeedPhraseButton: LocalizedStringKey = "sign.in.enter.seed.phrase.button"
     static let enterWordPlaceholder: LocalizedStringKey = "enter.word.placeholder"
+    
+    // MARK: - Main
+    static let mainTransaction: LocalizedStringKey = "main.transaction"
 }
