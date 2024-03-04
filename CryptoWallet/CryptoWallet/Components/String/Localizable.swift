@@ -24,4 +24,7 @@ enum Localizable {
     
     // MARK: - Main
     static let mainTransaction: LocalizedStringKey = "main.transaction"
+    static let mainEth: LocalizedStringKey = "main.eth"
+    static let mainUni: LocalizedStringKey = "main.uni"
+    static let mainOneInch: LocalizedStringKey = "main.oneInch"
 }

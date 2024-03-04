@@ -48,6 +48,28 @@
         }
       }
     },
+    "main.eth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ETH"
+          }
+        }
+      }
+    },
+    "main.oneInch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1INCH"
+          }
+        }
+      }
+    },
     "main.transaction" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -55,6 +77,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transfer"
+          }
+        }
+      }
+    },
+    "main.uni" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UNI"
           }
         }
       }
