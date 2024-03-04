@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TokenView: View {
     var uiImage: UIImage
-    var title: String
+    var title: LocalizedStringKey
     var action: () -> Void
     
     private var image: Image {
@@ -51,5 +51,5 @@ struct TokenView: View {
 }
 
 #Preview {
-    TokenView(uiImage: .add, title: "ETH") {}
+    TokenView(uiImage: .add, title: Localizable.mainEth) {}
 }
