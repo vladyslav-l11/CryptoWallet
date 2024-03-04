@@ -10,11 +10,14 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         GeometryReader { _ in
-            ZStack {
-                // TODO
+            VStack(spacing: 12) {
+                ForEach(MainViewModel.Tokens.allCases, id: \.self) { item in
+                    TokenView(uiImage: item.image, title: item.title) {
+                        // TODO
+                    }
+                }
             }
             .fullScreened()
-            .frame(alignment: .top)
             .background(.white)
             .ignoresSafeArea()
         }
