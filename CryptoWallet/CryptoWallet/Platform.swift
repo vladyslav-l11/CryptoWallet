@@ -11,8 +11,10 @@ final class Platform: UseCaseProvider {
     static let shared = Platform()
     
     let session: SessionUseCase
+    let web3: Web3UseCase
     
     private init() {
         session = SessionService()
+        web3 = Web3Service()
     }
 }

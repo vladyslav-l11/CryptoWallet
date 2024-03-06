@@ -11,6 +11,10 @@ protocol HasSessionUseCase {
     var session: SessionUseCase { get }
 }
 
-typealias UseCases = HasSessionUseCase
+protocol HasWeb3UseCase {
+    var web3: Web3UseCase
+}
+
+typealias UseCases = HasSessionUseCase & HasWeb3UseCase
 
 protocol UseCaseProvider: UseCases { }

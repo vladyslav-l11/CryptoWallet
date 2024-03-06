@@ -30,6 +30,8 @@
 		27AEBC802B8512560071AF37 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC7F2B8512560071AF37 /* HomeFactory.swift */; };
 		27AEBC822B8513930071AF37 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC812B8513930071AF37 /* HomeViewModel.swift */; };
 		27AEBC852B8518430071AF37 /* RouterContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEBC842B8518430071AF37 /* RouterContainer.swift */; };
+		27C6DDF62B98FF1E00AC23F0 /* Web3UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6DDF52B98FF1E00AC23F0 /* Web3UseCase.swift */; };
+		27C6DDF82B98FF2700AC23F0 /* Web3Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C6DDF72B98FF2700AC23F0 /* Web3Service.swift */; };
 		27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CFFC992B7BF30300D8A486 /* SeedWordView.swift */; };
 		27E51A1F2B81540D009D681B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A1E2B81540D009D681B /* BaseRouter.swift */; };
 		27E51A232B815579009D681B /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E51A222B815579009D681B /* RouterView.swift */; };
@@ -71,6 +73,8 @@
 		27AEBC7F2B8512560071AF37 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		27AEBC812B8513930071AF37 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		27AEBC842B8518430071AF37 /* RouterContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterContainer.swift; sourceTree = "<group>"; };
+		27C6DDF52B98FF1E00AC23F0 /* Web3UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3UseCase.swift; sourceTree = "<group>"; };
+		27C6DDF72B98FF2700AC23F0 /* Web3Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Service.swift; sourceTree = "<group>"; };
 		27CFFC992B7BF30300D8A486 /* SeedWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedWordView.swift; sourceTree = "<group>"; };
 		27E51A1E2B81540D009D681B /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		27E51A222B815579009D681B /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
@@ -277,6 +281,15 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		27C6DDF42B98FEEB00AC23F0 /* Web3 */ = {
+			isa = PBXGroup;
+			children = (
+				27C6DDF52B98FF1E00AC23F0 /* Web3UseCase.swift */,
+				27C6DDF72B98FF2700AC23F0 /* Web3Service.swift */,
+			);
+			path = Web3;
+			sourceTree = "<group>";
+		};
 		27CFFC962B7BF2F300D8A486 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +313,7 @@
 		27F230162B8E6B2100FBAAFA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				27C6DDF42B98FEEB00AC23F0 /* Web3 */,
 				27F230172B8E6B2900FBAAFA /* Session */,
 			);
 			path = Services;
@@ -444,6 +458,7 @@
 				2714DF842B7173D80013CAA5 /* AppDelegate.swift in Sources */,
 				27F2301C2B8E6B4B00FBAAFA /* SessionService.swift in Sources */,
 				27AEBC852B8518430071AF37 /* RouterContainer.swift in Sources */,
+				27C6DDF62B98FF1E00AC23F0 /* Web3UseCase.swift in Sources */,
 				27E51A272B8156E6009D681B /* Routeable.swift in Sources */,
 				27AEBC802B8512560071AF37 /* HomeFactory.swift in Sources */,
 				2782007C2B72DBCA003E1CA6 /* Localizable.swift in Sources */,
@@ -458,6 +473,7 @@
 				27F230062B8E5FD400FBAAFA /* BaseViewModel.swift in Sources */,
 				274245222B910CE200583CA0 /* ActivityView.swift in Sources */,
 				27F230192B8E6B3500FBAAFA /* SessionUseCase.swift in Sources */,
+				27C6DDF82B98FF2700AC23F0 /* Web3Service.swift in Sources */,
 				2714DF742B714B8F0013CAA5 /* AppView.swift in Sources */,
 				271E24E12B8544C700F19C85 /* View+Extensions.swift in Sources */,
 				27CFFC9A2B7BF30300D8A486 /* SeedWordView.swift in Sources */,
