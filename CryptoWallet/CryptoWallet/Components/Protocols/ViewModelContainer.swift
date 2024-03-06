@@ -9,4 +9,6 @@ import Foundation
 
 protocol ViewModelContainer {
     associatedtype ViewModel
+    
+    init(viewModel: ViewModel)
 }
